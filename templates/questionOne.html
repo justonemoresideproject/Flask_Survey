@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block title %} Question One {% endblock %}
+
+{% block content %} 
+
+<form action="/questions/2">
+    <input type="radio" id="likes_cookies" value="Yes" name="answer">
+    <label for="likes_cookies">Yes</label>
+    <input type="radio" id="likes_cookies" value="No" name="answer">
+    <label for="likes_cookies">No</label>
+    <button>Submit</button>
+</form>
+{% endblock %}
